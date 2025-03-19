@@ -1,34 +1,4 @@
 @use 'config/reset.scss';
-@use 'config/cores.scss';
-
-body {
-  background-color: cores.$corFundo;
-}
-
-header {
-  background-color: cores.$corFundoHeader;
-  position: sticky;
-  top: 0;
-  left: 0;
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-  }
-
-  .menu {
-    display: flex;
-  }
-
-  .menu li {
-    font-weight: bold;
-    margin-left: 24px;
-}
-
-  .menu li a {
-    color: #fff;
-    text-decoration: none;
-  }
-}
+@use 'secoes/header.scss';
+@use 'secoes/products.scss';
+@use 'media/mediaScreen.scss';
